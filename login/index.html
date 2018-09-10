@@ -5,6 +5,7 @@
 		<title>Log In - Operator</title>
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Source+Sans+Pro:300" rel="stylesheet">
+		<script src="./script.js" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="frame">
@@ -13,12 +14,12 @@
 			</div>
 			<div class="content">
 				<form action="index.html" method="post">
-					<div class="feedback feedback-info">
+					<div class="feedback" id="feedback-info">
 						<p>
 							Logging In...
 						</p>
 					</div>
-					<div class="feedback feedback-error">
+					<div class="feedback" id="feedback-error">
 						<p>
 							Invalid Username
 						</p>
@@ -26,9 +27,9 @@
 					<input type="text" size="50" name="username" placeholder="root" id="username" value="">
 					<input type="password" size="50" name="password" placeholder="12345" id="password" value="">
 					<div class="buttons">
-						<button type="button" name="login" onclick="alert('guacamole')">Log In</button>
+						<button type="button" name="login" onclick="clicked_login()">Log In</button>
 						<span id="space"></span>
-						<button type="button" name="register" onclick="alert('guacamole2')">Register</button>
+						<button type="button" name="register" onclick="clicked_register()">Register</button>
 					</div>
 				</form>
 			</div>
