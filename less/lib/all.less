@@ -1,2 +1,23 @@
 // Stuff that goes on ALL pages.
 @import (reference) "./colors";
+
+@font-a: ~"'Noto Sans', sans-serif";
+@font-b: ~"'Source Sans Pro', sans-serif";
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: @font-a;
+	font-weight: 700;
+}
+
+p, a{
+	font-family: @font-b;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 300;
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+p,
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(188, 0, 188, 0.05);
+}
+.frame {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgba(188, 0, 188, 0.15);
+  margin: 1rem;
+}
+.frame .header {
+  background-color: #BC00BC;
+}
+.frame .header h3 {
+  color: #FFFFFF;
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.frame .content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem 1rem;
+}
+.frame .content form input {
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.frame .content form .buttons {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.frame .content form .buttons #space {
+  width: 1rem;
+}
+.frame .content form .buttons button {
+  flex-grow: 1;
+  border: none;
+  padding: 1rem 0;
+  background-color: #5C11C1;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.frame .content form .buttons button:first-child {
+  background-color: #EB0047;
+}
+.frame .content form .feedback {
+  display: block;
+  border: 2px solid #EB0047;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.frame .content form .feedback p {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  color: #EB0047;
+}

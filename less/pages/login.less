@@ -1,1 +1,77 @@
 @import "../lib/all.less";
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: fade(@color-primary-0, 5%);
+}
+
+.frame{
+	box-shadow: 0px 0px 8px 0px fade(@color-black, 10%);
+	background-color: fade(@color-primary-0, 15%);
+	margin: 1rem;
+	.header{
+		background-color: @color-primary-0;
+		h3{
+			color: @color-white;
+			padding: 2rem 2rem;
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+	}
+	.content{
+		form{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			padding: 1rem 1rem;
+			input{
+				border: none;
+				padding: 1rem;
+				margin: 1rem 0;
+				font-family: @font-a;
+				font-size: 1rem;
+				box-shadow: 0px 0px 8px 0px fade(@color-black, 10%);
+			}
+			.buttons{
+				margin: 1rem 0;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				#space{
+					width: 1rem;
+				}
+				button{
+					flex-grow: 1;
+					border: none;
+					padding: 1rem 0;
+					background-color: @color-secondary-2-0;
+					font-family: @font-a;
+					font-weight: 700;
+					color: white;
+					box-shadow: 0px 0px 8px 0px fade(@color-black, 10%);
+				}
+				button:first-child{
+					background-color: @color-secondary-1-0;
+				}
+			}
+			.feedback{
+				display: block;
+				border: 2px solid @color-secondary-1-0;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 1rem;
+				margin: 1rem 0;
+				p{
+					text-align: center;
+					font-family: @font-a;
+					font-weight: 400;
+					color: @color-secondary-1-0;
+				}
+			}
+		}
+	}
+}

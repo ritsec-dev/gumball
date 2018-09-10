@@ -2,9 +2,31 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Log In - Operator</title>
+		<link rel="stylesheet" href="./style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Source+Sans+Pro:300" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Log the fuck in, bro.</h1>
+		<div class="frame">
+			<div class="header">
+				<h3>Operator - Log In</h3>
+			</div>
+			<div class="content">
+				<form action="index.html" method="post">
+					<div class="feedback">
+						<p id="feedbackp">
+							Invalid Username
+						</p>
+					</div>
+					<input type="text" size="50" name="username" placeholder="root" id="username" value="">
+					<input type="password" size="50" name="password" placeholder="12345" id="password" value="">
+					<div class="buttons">
+						<button type="button" name="login">Log In</button>
+						<span id="space"></span>
+						<button type="button" name="register">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
