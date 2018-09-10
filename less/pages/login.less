@@ -53,9 +53,17 @@ body{
 					font-weight: 700;
 					color: white;
 					box-shadow: 0px 0px 8px 0px fade(@color-black, 10%);
+					cursor: pointer;
+					transition: background-color 0.2s ease-in-out;
+					&:hover{
+						background-color: @color-secondary-2-2;
+					}
 				}
 				button:first-child{
 					background-color: @color-secondary-1-0;
+					&:hover{
+						background-color: @color-secondary-1-2;
+					}
 				}
 			}
 			.feedback{
@@ -70,6 +78,12 @@ body{
 					font-family: @font-a;
 					font-weight: 400;
 					color: @color-secondary-1-0;
+				}
+			}
+			.feedback-info{
+				border-color: @color-secondary-2-0;
+				p{
+					color: @color-secondary-2-0;
 				}
 			}
 		}

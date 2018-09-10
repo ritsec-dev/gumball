@@ -13,17 +13,22 @@
 			</div>
 			<div class="content">
 				<form action="index.html" method="post">
-					<div class="feedback">
-						<p id="feedbackp">
+					<div class="feedback feedback-info">
+						<p>
+							Logging In...
+						</p>
+					</div>
+					<div class="feedback feedback-error">
+						<p>
 							Invalid Username
 						</p>
 					</div>
 					<input type="text" size="50" name="username" placeholder="root" id="username" value="">
 					<input type="password" size="50" name="password" placeholder="12345" id="password" value="">
 					<div class="buttons">
-						<button type="button" name="login">Log In</button>
+						<button type="button" name="login" onclick="alert('guacamole')">Log In</button>
 						<span id="space"></span>
-						<button type="button" name="register">Register</button>
+						<button type="button" name="register" onclick="alert('guacamole2')">Register</button>
 					</div>
 				</form>
 			</div>

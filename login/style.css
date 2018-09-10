@@ -73,9 +73,17 @@ body {
   font-weight: 700;
   color: white;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.frame .content form .buttons button:hover {
+  background-color: #7436C7;
 }
 .frame .content form .buttons button:first-child {
   background-color: #EB0047;
+}
+.frame .content form .buttons button:first-child:hover {
+  background-color: #EC316A;
 }
 .frame .content form .feedback {
   display: block;
@@ -90,4 +98,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   color: #EB0047;
+}
+.frame .content form .feedback-info {
+  border-color: #5C11C1;
+}
+.frame .content form .feedback-info p {
+  color: #5C11C1;
 }
