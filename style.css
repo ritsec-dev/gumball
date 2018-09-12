@@ -19,67 +19,67 @@ a {
   line-height: 1.5rem;
   font-weight: 300;
 }
-.colors div {
-  width: 100%;
-  height: 100px;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(188, 0, 188, 0.05);
 }
-.colors .b0 {
+.frame {
+  background-color: rgba(188, 0, 188, 0.15);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.frame .header h1 {
+  padding: 2rem 2rem;
   background-color: #BC00BC;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
-.colors .b1 {
-  background-color: #CD4ECD;
+.frame .content {
+  padding-top: 1rem;
 }
-.colors .b2 {
-  background-color: #C228C2;
+.frame .content #tagline {
+  display: block;
+  margin: 1rem 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  text-align: center;
 }
-.colors .b3 {
-  background-color: #930093;
+.frame .content .button {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-.colors .b4 {
-  background-color: #730073;
-}
-.colors .s10 {
-  background-color: #EB0047;
-}
-.colors .s11 {
-  background-color: #F05C89;
-}
-.colors .s12 {
-  background-color: #EC316A;
-}
-.colors .s13 {
-  background-color: #CA003D;
-}
-.colors .s14 {
-  background-color: #9E0030;
-}
-.colors .s20 {
+.frame .content #btt {
   background-color: #5C11C1;
 }
-.colors .s21 {
-  background-color: #8E5BD1;
-}
-.colors .s22 {
+.frame .content #btt:hover {
   background-color: #7436C7;
 }
-.colors .s23 {
-  background-color: #480A99;
+.frame .content #rtt {
+  background-color: #EB0047;
 }
-.colors .s24 {
-  background-color: #370778;
+.frame .content #rtt:hover {
+  background-color: #EC316A;
 }
-.colors .c0 {
-  background-color: #CEF800;
+.frame .content #inf {
+  background-color: #930093;
 }
-.colors .c1 {
-  background-color: #E0FA60;
+.frame .content #inf:hover {
+  background-color: #BC00BC;
 }
-.colors .c2 {
-  background-color: #D7F933;
+.frame .content #log {
+  background-color: #930093;
 }
-.colors .c3 {
-  background-color: #B5DA00;
-}
-.colors .c4 {
-  background-color: #8DAA00;
+.frame .content #log:hover {
+  background-color: #BC00BC;
 }

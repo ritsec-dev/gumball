@@ -34,7 +34,7 @@ body {
 .frame .header {
   background-color: #BC00BC;
 }
-.frame .header h3 {
+.frame .header h1 {
   color: #FFFFFF;
   padding: 2rem 2rem;
   font-size: 1.5rem;
