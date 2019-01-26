@@ -17,9 +17,23 @@ var init = function(){
 	field_password = document.getElementById('password');
 }
 
+var login = function(){
+    let username = field_username.value;
+    let password = field_password.value;
+
+    let headers = new Headers();
+    headers.append('Authorization', 'Basic '+window.btoa(username+':'+password));
+
+    // Cross Origin Request Bullshittery is ruining my Friday.
+
+    // no-cors bypasses cross-origin forbidden bullshit
+    return fetch('http://portcullis.op-staging.space/api/auth', {method: 'POST', mode: 'no-cors', headers: headers});
+}
+
 var clicked_login = function(){
 	show_info("Contacting Mothership...");
 	hide_error();
+    /*
 	new Promise(function(yes, no){
 		// TODO - Hit Up that Authentication API.
 		if(field_username.value==='root' && field_password.value==='12345'){
@@ -33,7 +47,16 @@ var clicked_login = function(){
 	},function(){
 		hide_info();
 		show_error("Invalid Credentials.");
-	});
+	});//*/
+    login().then(
+        function(response){
+            console.log(response);
+        }
+    ).catch(
+        function(response){
+            console.log(response);
+        }
+    );
 }
 
 var clicked_register = function(){

@@ -1,23 +1,16 @@
-# Operator - Front
+# Gumball!
 
-*Navi calls this Gumball.*
+Gumball is operator's front-end: a beautiful, fun way to interact with all those scary API calls.
 
-## Flow:
+## Pages
 
-1. User requests a page.
-2. Gumball gives them the page.
-3. Page probably requests things from somewhere else.
-
-## Repo Structure
-
-- Home Page
-	- index.html
-	- style.css
-- less/
-	- Holds LESS source.
-	- build.sh
-		- Compiles LESS source into all the style.css files.
-- other folders
-	- One for each additional page
-	- contain index.html
-	- contain style.css
+- Login
+- Application
+	- Single menu: tools, operations, log out
+- Tools Index
+	- Individual Tools Pages
+- Operations Index
+	- Specific operations
+		- Specific blue teams within an operation
+			- Specific machines within that team
+				- Shows what's going on with that machine
