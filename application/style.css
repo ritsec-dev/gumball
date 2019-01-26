@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+p,
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(188, 0, 188, 0.05);
+}
+.frame {
+  background-color: rgba(188, 0, 188, 0.15);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.frame .header h1 {
+  padding: 2rem 2rem;
+  background-color: #BC00BC;
+  font-family: 'Noto Sans', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.frame .content {
+  padding-top: 1rem;
+}
+.frame .content #tagline {
+  display: block;
+  margin: 1rem 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  text-align: center;
+}
+.frame .content .button {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.frame .content #btt {
+  background-color: #5C11C1;
+}
+.frame .content #btt:hover {
+  background-color: #7436C7;
+}
+.frame .content #rtt {
+  background-color: #EB0047;
+}
+.frame .content #rtt:hover {
+  background-color: #EC316A;
+}
+.frame .content #inf {
+  background-color: #930093;
+}
+.frame .content #inf:hover {
+  background-color: #BC00BC;
+}
+.frame .content #log {
+  background-color: #930093;
+}
+.frame .content #log:hover {
+  background-color: #BC00BC;
+}

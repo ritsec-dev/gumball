@@ -2,33 +2,37 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>Operator</title>
+		<title>Log In - Operator</title>
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Source+Sans+Pro:300" rel="stylesheet">
+		<script src="./script.js" charset="utf-8"></script>
 	</head>
 	<body>
-		<!--
-			What goes on this page?
-			Title: Operator
-			Tagline: Tools and Infrastructure Deployment
-			Status: You are Authenticated. Log Out.
-			Status: You are not Authenticated. Log In.
-			Button: Blue Team Tools.
-			Button: Red Team Tools. (Protected)
-			Button: Infrastructure. (Protected)
-		-->
 		<div class="frame">
 			<div class="header">
-				<h1>Operator</h1>
+				<h1>Operator - Log In</h1>
 			</div>
 			<div class="content">
-				<span id="tagline">It's time to go to work.</span>
-				<a href="#" class="button" id="btt">Blue team tools</a>
-				<a href="#" class="button" id="rtt">Red team tools</a>
-				<a href="#" class="button" id="inf">Infrastructure Deployment</a>
-				<a href="./login/index.html" class="button" id="log"></a>
+				<form action="index.html" method="post">
+					<div class="feedback" id="feedback-info">
+						<p>
+							Logging In...
+						</p>
+					</div>
+					<div class="feedback" id="feedback-error">
+						<p>
+							Invalid Username
+						</p>
+					</div>
+					<input type="text" size="50" name="username" placeholder="root" id="username" value="">
+					<input type="password" size="50" name="password" placeholder="12345" id="password" value="">
+					<div class="buttons">
+						<button type="button" name="login" onclick="clicked_login()">Log In</button>
+						<span id="space"></span>
+						<button type="button" name="register" onclick="clicked_register()">Register</button>
+					</div>
+				</form>
 			</div>
-
 		</div>
 	</body>
 </html>
